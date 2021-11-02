@@ -95,15 +95,15 @@ section {
   margin: 20px 20px 35px;
   font-size: 60px;
   font-weight: 600;
-  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-width: 1.3px;
   -webkit-text-stroke-color: #0085eb;
 }
 
 .front .content .header .subtitle {
   margin: 20px 20px 35px;
-  font-size: 35px;
-  font-weight: 100;
-  -webkit-text-stroke-width: 0.8px;
+  font-size: 40px;
+  font-weight: 200;
+  -webkit-text-stroke-width: 1.0px;
   -webkit-text-stroke-color: #0085eb;
 }
 
@@ -271,6 +271,7 @@ section {
   color: black;
   list-style: none;
   text-align: center;
+  margin: auto;
 }
 
 .portfolio .content {
@@ -279,7 +280,7 @@ section {
 }
 
 .portfolio .content .column {
-  width: 22%;
+  width: 24%;
   display: inline-block;
   vertical-align: top;
   max-width: 600px;
@@ -344,10 +345,10 @@ section {
 
 .portfolio .content .column .figure .caption .captionContent .captionText .captionTitle{
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 800;
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: #0085eb;
+  -webkit-text-stroke-width: 1.0px;
+  -webkit-text-stroke-color: #0085ff;
 }
 
 .portfolio .content .column .figure .caption .captionContent .captionText .captionTitle span{
@@ -355,8 +356,8 @@ section {
 }
 
 .portfolio .content .column .figure .caption .captionContent .captionText p{
-  font-size: .8em;
-  font-weight: 100;
+  font-size: 0.8em;
+  font-weight: 400;
 }
 
 .portfolio .content .column .figure .caption .captionContent .captionText .p span{
@@ -376,7 +377,7 @@ section {
 }
 
 .portfolio .content .column .figure:hover img{
-  opacity: 0.3;
+  opacity: 0.15;
   -webkit-transform: translate3d(-50px,0,0);
   transform: translate3d(-50px,0,0);
 }
@@ -426,10 +427,30 @@ section {
   transform: translate3d(0,0,0);
 }
 
+@media screen and (max-width: 1600px) {
+    .portfolio {
+        width: 90%;
+        background: white;
+        color: black;
+        list-style: none;
+        text-align: center;
+        margin: auto;
+    }
+
+    .portfolio .content .column {
+        width: 48%;
+        display: inline-block;
+        vertical-align: top;
+        max-width: 500px;
+        margin-top: 10px; /* Same as figure bottom margin */
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
 @media screen and (max-width: 800px) {
   .portfolio {
-    width: 100%;
-    max-width: 450px ;
+    width: 80%;
     background: white;
     color: black;
     list-style: none;
@@ -443,7 +464,7 @@ section {
   }
 
   .portfolio .content .column {
-    width: 80%;
+    width: 100%;
     display: inline-block;
     vertical-align: top;
     max-width: 600px;
